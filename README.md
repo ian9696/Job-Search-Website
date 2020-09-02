@@ -1,6 +1,6 @@
 Job Search Website implemented using PHP, SQL, Apache, and MariaDB.
 
-Job seeker\
+Job seeker can:\
 Register, Log in/out\
 Fill in resume\
 View list of job vacancy, search based on multiple criteria, sort by salary\

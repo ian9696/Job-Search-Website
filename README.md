@@ -27,4 +27,4 @@ View application list
 Hire job seeker 
 
 ## Note
-Files copied from `project2 rebuild(XAMPP) 202007302128.zip`
+Files copied from `project2 rebuild(XAMPP) 202007302128.zip`.

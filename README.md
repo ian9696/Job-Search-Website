@@ -25,3 +25,5 @@ View list of job seeker
 View application list
 
 Hire job seeker 
+
+## Screenshots

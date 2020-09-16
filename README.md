@@ -27,3 +27,7 @@ View application list
 Hire job seeker 
 
 ## Screenshots
+Home page
+<p>
+<img src="screenshot/1.png" width="100%">
+</p>

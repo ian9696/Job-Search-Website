@@ -29,28 +29,28 @@ Employer
 ## Screenshots
 Home page.
 
-> <img src="screenshot/1.png" width="100%">
+<img src="screenshot/1.png" width="100%">
 
 Search based on salary.
 
-> <img src="screenshot/2.png" width="100%">
+<img src="screenshot/2.png" width="100%">
 
-Job seeker - Register, fill in resume.
+Job seeker - register, fill in resume.
 
-> <img src="screenshot/3.png" width="100%">
+<img src="screenshot/3.png" width="100%">
 
-Job seeker - Apply for job, add to favorite.
+Job seeker - apply for job, add to favorite.
 
-> <img src="screenshot/4.png" width="100%">
+<img src="screenshot/4.png" width="100%">
 
-Job seeker - Favorite list.
+Job seeker - favorite list.
 
-> <img src="screenshot/5.png" width="100%">
+<img src="screenshot/5.png" width="100%">
 
-Employer - Edit job details.
+Employer - edit job details.
 
-> <img src="screenshot/6.png" width="100%">
+<img src="screenshot/6.png" width="100%">
 
-Employer - View job applications, hire job seeker.
+Employer - view job applications, hire job seeker.
 
-> <img src="screenshot/7.png" width="100%">
+<img src="screenshot/7.png" width="100%">

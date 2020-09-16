@@ -44,7 +44,7 @@ Search based on salary.
 
 Job seeker - register, fill in resume.
 
-<img src="screenshot/3.png" width="100%">
+<img src="screenshot/3.png" width="80%">
 
 ---
 

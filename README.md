@@ -16,7 +16,7 @@ Job Seeker
 Employer
 - Register, log in/out
 
-- Post new job, edit job detail, delete job
+- Post new job, edit job details, delete job
 
 - View list of job vacancy, search based on multiple criteria, sort by salary
 

@@ -31,7 +31,7 @@ Home page.
 
 > <img src="screenshot/1.png" width="80%">
 
-Job seeker - Search based on salary.
+Search based on salary.
 
 > <img src="screenshot/2.png" width="80%">
 

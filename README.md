@@ -13,7 +13,7 @@ Job Seeker
 
 - Apply for job
 
-### Employer
+Employer
 - Register, log in/out
 
 - Post new job, edit job detail, delete job

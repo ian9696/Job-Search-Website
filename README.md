@@ -28,8 +28,6 @@ Employer
 
 ## Screenshots
 
----
-
 Home page.
 
 <img src="screenshot/1.png" width="100%">
@@ -44,6 +42,7 @@ Search based on salary.
 
 Job seeker - register, fill in resume.
 
+<br>
 <img src="screenshot/3.png" width="80%">
 
 ---

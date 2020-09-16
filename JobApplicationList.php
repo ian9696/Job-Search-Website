@@ -85,8 +85,8 @@
 						"<td style=\"width:7%\">".$row['location']."</td>".
 						"<td style=\"width:7%\">".$row['working_time']."</td>".
 						"<td style=\"width:15%\">".$row['education']."</td>".
-						"<td style=\"width:13%\">".($row['experience']==0?"No experience required":$row['experience']." year".($row['experience']>=2?"s":""))."</td>".
 						"<td style=\"width:10%\">".$row['salary']."</td>".
+						"<td style=\"width:13%\">".($row['experience']==0?"No experience required":$row['experience']." year".($row['experience']>=2?"s":""))."</td>".
 						"<td style=\"width:17%\"></td>".
 						"<td style=\"width:13%\"></td>".
 						"<td style=\"width:11%\"></td>".

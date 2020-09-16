@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 30, 2020 at 03:22 PM
+-- Generation Time: Sep 16, 2020 at 11:05 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -37,7 +37,20 @@ CREATE TABLE `application` (
 --
 
 INSERT INTO `application` (`user_id`, `recruit_id`) VALUES
-(2, 1);
+(7, 7),
+(7, 11),
+(8, 13),
+(8, 11),
+(9, 9),
+(9, 10),
+(10, 5),
+(10, 14),
+(11, 14),
+(11, 13),
+(11, 8),
+(12, 12),
+(12, 6),
+(12, 8);
 
 -- --------------------------------------------------------
 
@@ -58,9 +71,11 @@ CREATE TABLE `employer` (
 --
 
 INSERT INTO `employer` (`id`, `account`, `password`, `phone`, `mail`) VALUES
-(8, 'employer_6', '54c9c8710a2c6917f5130f160561d5b7f0e30979', '0213216666', 'employer_6-666@asd.c'),
-(9, 'employer_7', 'a14a01a38dcadc8a73346bb0cb1ea7aa400b24aa', '0213777777', 'a12@a.a'),
-(10, 'employer_8', 'a572f9ad7f43feffca19685c551005053b08ca25', '013013518', 'a88w@a.b');
+(11, 'employer_1', '2ff5a08f5cb822e10281d513e9a15cd306c3a9b6', '0909202244', 'tseng7@mar.co.jp'),
+(12, 'employer_2', '35d1f48a4bb93c8628dff2c6ff7edd83c90bb15f', '228807708', 'service@airspaceonline.com'),
+(13, 'employer_3', '2f0f5fb52bffa458c0d6ad542761e34f9abfb3cf', '33169408', 'rssh@webmail.rssh.com.tw'),
+(14, 'employer_4', '3a5ac36d6fbe36e9ff923e4260ec13a6cb85388a', '02958837', 'fastsupport@narlabs.org.tw'),
+(15, 'employer_5', 'fe56517d2aaace4b869647a3cc8c0b4571ab7180', '0948288747', 'info@sennheiser.com');
 
 -- --------------------------------------------------------
 
@@ -78,8 +93,31 @@ CREATE TABLE `favorite` (
 --
 
 INSERT INTO `favorite` (`user_id`, `recruit_id`) VALUES
-(1, 1),
-(2, 1);
+(7, 7),
+(7, 15),
+(7, 11),
+(7, 12),
+(8, 11),
+(8, 13),
+(9, 9),
+(9, 10),
+(9, 14),
+(9, 6),
+(10, 5),
+(10, 14),
+(10, 12),
+(10, 8),
+(11, 6),
+(11, 8),
+(11, 11),
+(11, 13),
+(11, 14),
+(12, 6),
+(12, 8),
+(12, 11),
+(12, 12),
+(12, 13),
+(12, 14);
 
 -- --------------------------------------------------------
 
@@ -100,7 +138,11 @@ INSERT INTO `location` (`id`, `location`) VALUES
 (1, 'Taipei'),
 (4, 'Tainan'),
 (5, 'Hsinchu'),
-(6, 'Taichung');
+(6, 'Taichung'),
+(8, 'Scotland, United Kingdom'),
+(9, 'New York, United States'),
+(10, 'Mumbai, Maharashtra, India'),
+(11, 'Bengaluru, Karnataka, India');
 
 -- --------------------------------------------------------
 
@@ -121,7 +163,14 @@ INSERT INTO `occupation` (`id`, `occupation`) VALUES
 (1, 'Doctor'),
 (2, 'Reporter'),
 (3, 'Teacher'),
-(4, 'Pianist');
+(4, 'Pianist'),
+(5, 'Business Analyst'),
+(6, 'Machine Learning Analyst'),
+(7, 'Data Analyst'),
+(8, 'Digital Marketing Specialist'),
+(9, 'Business Development Manager'),
+(10, 'Marketing Specialist'),
+(12, 'Banquets Admin Assistant');
 
 -- --------------------------------------------------------
 
@@ -145,8 +194,18 @@ CREATE TABLE `recruit` (
 --
 
 INSERT INTO `recruit` (`id`, `employer_id`, `occupation_id`, `location_id`, `working_time`, `education`, `experience`, `salary`) VALUES
-(1, 8, 1, 1, 'Morning', 'Elementary School', 0, 111),
-(3, 8, 4, 5, 'Night', 'High School', 1, 3);
+(4, 11, 1, 1, 'Morning', 'Elementary School', 0, 40000),
+(5, 11, 2, 4, 'Afternoon', 'High School', 1, 45000),
+(6, 11, 3, 5, 'Night', 'UnderGraduate School', 2, 46000),
+(7, 11, 4, 6, 'Afternoon', 'Graduate School', 3, 52000),
+(8, 12, 5, 8, 'Afternoon', 'UnderGraduate School', 1, 35500),
+(9, 12, 6, 9, 'Night', 'Graduate School', 1, 37000),
+(10, 13, 7, 10, 'Morning', 'Graduate School', 2, 54500),
+(11, 13, 8, 11, 'Afternoon', 'High School', 0, 45000),
+(12, 14, 5, 10, 'Afternoon', 'UnderGraduate School', 1, 35800),
+(13, 14, 8, 10, 'Night', 'UnderGraduate School', 3, 39900),
+(14, 15, 3, 6, 'Morning', 'Elementary School', 2, 45000),
+(15, 15, 4, 5, 'Night', 'High School', 3, 65000);
 
 -- --------------------------------------------------------
 
@@ -167,7 +226,15 @@ INSERT INTO `specialty` (`id`, `specialty`) VALUES
 (1, 'Beauty'),
 (2, 'Accounting'),
 (3, 'Design'),
-(4, 'Catering');
+(4, 'Catering'),
+(5, 'Banking'),
+(6, 'SQL'),
+(7, 'R'),
+(8, 'Python '),
+(9, 'Marketing'),
+(10, 'Advertising'),
+(11, 'Sales'),
+(12, 'Training');
 
 -- --------------------------------------------------------
 
@@ -192,11 +259,12 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `account`, `password`, `education`, `expected_salary`, `phone`, `gender`, `age`, `email`) VALUES
-(1, 'seeker_1', 'a69f7c9f22eaa6d57670839a909d6a9f92a155d7', 'Elementary School', 111, '0231111111', 'male', 11, 'a1a1@google.com'),
-(2, 'seeker_2', '5c07313cd461e65dd40bf0b1573e9e3e54fbc341', 'Graduate School', 1222, '023122122', 'female', 22, 'k22@jkl.lkj'),
-(3, 'seeker_3', '004402db1e82c0174d4d44791c5eae2dc5154087', 'UnderGraduate School', 333, '012333', 'female', 33, '32132j@k.k'),
-(4, 'seeker_4', '80e85347c50d2d6d6011ec4da8c7795ce290a3ef', 'High School', 44, '013444', 'male', 44, '053g@k.k'),
-(6, 'seeker_5', '565b12efbcd0ba488d5d999e17ca78a8c27d5546', 'Elementary School', 555, '0555', 'female', 55, '5@m.m');
+(7, 'Mary', '94f85995c7492eec546c321821aa4beca9a3e2b1', 'UnderGraduate School', 35000, '0928316515', 'female', 23, 'Mary350@gmail.com'),
+(8, 'York', 'c12d8fabe69074b9b1226488182f8b7fa6c98430', 'High School', 31000, '0938948132', 'male', 19, 'AdcYork4@yahoo.com'),
+(9, 'Stanley', 'a305f56d078b2fa686d82aefeafa895e2cc87558', 'Graduate School', 42000, '0288792135', 'male', 26, 'Poiaeley@kimo.com'),
+(10, 'Morgan', '8e4408b475d63385a73aed2fe911dd9818e82fb5', 'Elementary School', 24000, '0932662332', 'male', 18, 'MorganAoi@gmail.com'),
+(11, 'Gina', 'c3de4113912d29cffcf03250c113235163e31c2e', 'Graduate School', 55000, '0987789875', 'female', 35, 'Gina35a@yahoo.com.tw'),
+(12, 'Vocaturo', '6e4f36e3bfdadfa71998d9235257e360c0199ca9', 'UnderGraduate School', 36500, '0326663262', 'male', 21, 'VocaturoDayo@msn.com');
 
 -- --------------------------------------------------------
 
@@ -215,11 +283,23 @@ CREATE TABLE `user_specialty` (
 --
 
 INSERT INTO `user_specialty` (`id`, `user_id`, `specialty_id`) VALUES
-(7, 6, 2),
-(8, 6, 3),
-(9, 6, 4),
-(10, 3, 4),
-(13, 3, 3);
+(14, 7, 1),
+(15, 7, 4),
+(16, 8, 4),
+(17, 8, 11),
+(18, 9, 6),
+(19, 9, 7),
+(20, 9, 8),
+(21, 10, 11),
+(22, 11, 2),
+(23, 11, 5),
+(24, 11, 9),
+(25, 11, 10),
+(26, 11, 12),
+(27, 12, 9),
+(28, 12, 10),
+(29, 12, 11),
+(30, 12, 12);
 
 --
 -- Indexes for dumped tables
@@ -294,43 +374,43 @@ ALTER TABLE `user_specialty`
 -- AUTO_INCREMENT for table `employer`
 --
 ALTER TABLE `employer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `location`
 --
 ALTER TABLE `location`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `occupation`
 --
 ALTER TABLE `occupation`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `recruit`
 --
 ALTER TABLE `recruit`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `specialty`
 --
 ALTER TABLE `specialty`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `user_specialty`
 --
 ALTER TABLE `user_specialty`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- Constraints for dumped tables

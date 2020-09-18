@@ -2,7 +2,7 @@
 Job Search Website implemented using PHP, SQL, Apache, and MariaDB.
 
 ## Features
-Job Seeker
+### Job Seeker
 - Register, log in/out
 
 - Fill in resume
@@ -13,7 +13,7 @@ Job Seeker
 
 - Apply for job
 
-Employer
+### Employer
 - Register, log in/out
 
 - Post new job, edit job details, delete job
@@ -28,43 +28,43 @@ Employer
 
 ## Screenshots
 
-Home page.
+### Home page.
 
 <img src="screenshot/1.png" width="100%">
 
 ---
 
-Search based on salary.
+### Search based on salary.
 
 <img src="screenshot/2.png" width="100%">
 
 ---
 
-Job seeker - register, fill in resume.
+### Job seeker - register, fill in resume.
 
 <br>
 <img src="screenshot/3.png" width="80%">
 
 ---
 
-Job seeker - apply for job, add to favorite.
+### Job seeker - apply for job, add to favorite.
 
 <img src="screenshot/4.png" width="100%">
 
 ---
 
-Job seeker - favorite list.
+### Job seeker - favorite list.
 
 <img src="screenshot/5.png" width="100%">
 
 ---
 
-Employer - edit job details.
+### Employer - edit job details.
 
 <img src="screenshot/6.png" width="100%">
 
 ---
 
-Employer - view job applications, hire job seeker.
+### Employer - view job applications, hire job seeker.
 
 <img src="screenshot/7.png" width="100%">
